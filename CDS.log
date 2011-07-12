@@ -1,0 +1,34 @@
+\i (load "skill.il")
+\t t
+\i (mySkillFunc)
+\i mes
+\t "hoge"
+\p >
+\i mes = "hage"
+\t "hage"
+\p >
+\o "hage"
+\t nil
+\p >
+\i (mySkillFunc)
+\p >
+\o "hoge"
+\t nil
+\p >
+\i (load "skill.ils")
+\t t
+\p >
+\i (mySkillFunc)
+\p >
+\i mes
+\e *Error* toplevel: undefined variable - mes
+\p >
+\i mes = "hage"
+\t "hage"
+\p >
+\o "hoge"
+\t nil
+\p >
+\i mes
+\t "hage"
+\p >
